@@ -1,8 +1,13 @@
 
 //Sibabalwe
-function add = a, b => { a + b }
+function add(a, b){ 
+	return a + b; 
+}
 
-function multiply = a, b => { a - b }
+function multiply(a, b) { 
+	return a * b; 
+}
+
 //Sandile
 function internal() {
 	const added = this.add(this.a, this.b)
