@@ -9,10 +9,11 @@ function multiply(a, b) {
 }
 
 //Sandile
+//updat the internal() function to utilize the properties a and b from the internalobject and make use of the add() and multiply functions.
 function internal() {
-	const added = this.add(this.a, this.b)
-	this.multiply(this.a, this.b)
-	return this
+    const added = this.add(this.internal.a, this.internal.b);
+    const multiplied = this.multiply(this.internal.a, this.internal.b);
+    return this;
 }
 
 // Not allowed to change below this
